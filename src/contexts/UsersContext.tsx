@@ -2,23 +2,23 @@ import {  useState, ReactNode } from "react";
 import { createContext } from "use-context-selector";
 // import { api } from "../lib/axios";
 
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  password: string;
-  isAdmin: boolean;
-  createdAt: string;
-}
+// interface User {
+//   id: number;
+//   name: string;
+//   email: string;
+//   password: string;
+//   isAdmin: boolean;
+//   createdAt: string;
+// }
 
-interface CreateUserInput {
-  name: string;
-  email: string;
-  password: string;
-}
+// interface CreateUserInput {
+//   name: string;
+//   email: string;
+//   password: string;
+// }
 
 interface UsersContextType {
-  users: User[];
+  // users: User[];
   // createUser: (data: CreateUserInput) => Promise<void>;
   buttonState: boolean;
   handleButtonState: () => void;
@@ -31,7 +31,7 @@ interface UserProviderProps {
 }
 
 export function UsersProvider({ children }: UserProviderProps) {
-  const [users, setUsers] = useState<User[]>([]);
+  // const [users, setUsers] = useState<User[]>([]);
   const [buttonState, setButtonState] = useState(true);
 
   function handleButtonState() {
@@ -57,7 +57,7 @@ export function UsersProvider({ children }: UserProviderProps) {
 
   return (
     <UserContext.Provider
-      value={{ users,  buttonState, handleButtonState }}
+      value={{   buttonState, handleButtonState }}
     >
       {children}
     </UserContext.Provider>
