@@ -1,0 +1,20 @@
+{
+  "users":[
+    {
+      "id":1,
+      "name" :"rafael",
+      "email":"rafael@email.com",
+      "password":"12$@Abc",
+      "isAdmin":true,
+      "createdAt": "2023-07-15T23:38:11.839Z"
+    },
+    {
+      "id":2,
+      "name" :"lívia",
+      "email":"livia@email.com",
+      "password":"12$@Abc",
+      "isAdmin":true,
+      "createdAt": "2023-07-15T23:42:11.839Z"
+    }
+  ]
+}
