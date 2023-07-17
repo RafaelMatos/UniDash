@@ -1,5 +1,6 @@
 
 import logoUnimed from "../../assets/logo_unimed.png";
+import backLogin from "../../assets/back_login.png";
 import {
   AuthContainer,
   ImageContainer,
@@ -19,7 +20,7 @@ export function LoginPage() {
   return (
     <LoginPageContainer>
       <ImageContainer>
-        <LoginImage src="src\assets\back_login.png" alt="" />
+        <LoginImage src={backLogin} alt="" />
       </ImageContainer>
 
       <AuthContainer>
