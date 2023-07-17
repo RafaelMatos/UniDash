@@ -1,6 +1,6 @@
-import { useEffect, useState, useCallback, ReactNode } from "react";
+import {  useState, useCallback, ReactNode } from "react";
 import { createContext } from "use-context-selector";
-import { api } from "../lib/axios";
+// import { api } from "../lib/axios";
 
 interface User {
   id: number;
