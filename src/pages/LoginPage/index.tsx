@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import logoUnimed from "../../assets/logo_unimed.png";
 import {
   AuthContainer,
@@ -13,7 +13,6 @@ import { LoginForm } from "./LoginForm";
 import { useContext } from "use-context-selector";
 import { UserContext } from "../../contexts/UsersContext";
 export function LoginPage() {
-  const [isRegisted, setIsRegisted] = useState(true);
 
   const { buttonState } = useContext(UserContext)
   
